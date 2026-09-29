@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClinicaVeterinaria;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,17 @@ namespace ClinicaVeterinariaForms
         public FrmCadastroTutor()
         {
             InitializeComponent();
+        }
+
+        private void btnCadastrarTutor_Click(object sender, EventArgs e)
+        {
+            //chamar a função cadastrar tutor no meu banco de dados
+            Tutor tutorCadastrar = new Tutor();
+            tutorCadastrar.cpf = mTxtCpf.Text;
+            tutorCadastrar.telefone = mTxtTelefone.Text;
+            tutorCadastrar.email = txtEmail.Text;
+            tutorCadastrar.nome = txtNomeTutor.Text;
+            tutorCadastrar.CadastrarTutor(tutorCadastrar);
         }
     }
 }

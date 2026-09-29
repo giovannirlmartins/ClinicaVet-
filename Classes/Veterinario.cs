@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ClinicaVeterinaria
 {
-    public class Veterinario : Pessoa
+    public class Veterinario 
     {
         public string? crmv {  get; set; }
         public string? especialidade { get; set; }

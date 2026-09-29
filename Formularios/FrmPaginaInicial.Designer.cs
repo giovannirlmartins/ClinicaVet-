@@ -103,7 +103,7 @@
             // 
             // pnlPaginaInicial
             // 
-            pnlPaginaInicial.Location = new Point(12, 32);
+            pnlPaginaInicial.Location = new Point(12, 27);
             pnlPaginaInicial.Name = "pnlPaginaInicial";
             pnlPaginaInicial.Size = new Size(776, 411);
             pnlPaginaInicial.TabIndex = 1;

@@ -18,6 +18,14 @@ namespace ClinicaVeterinariaForms
         private void tutorToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            // precisa chamar a tela de cadastro de alunos
+            FrmCadastroTutor cadastroTutor = new FrmCadastroTutor();
+            cadastroTutor.TopLevel = false;
+            cadastroTutor.FormBorderStyle = FormBorderStyle.None;
+            cadastroTutor.Dock = DockStyle.Fill;
+            pnlPaginaInicial.Controls.Clear();
+            pnlPaginaInicial.Controls.Add(cadastroTutor);
+            cadastroTutor.Show();
         }
     }
 }

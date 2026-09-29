@@ -39,7 +39,7 @@
             btnCadastrar = new Button();
             btnVoltar = new Button();
             lblSenha = new Label();
-            textBox1 = new TextBox();
+            txtSenha = new TextBox();
             SuspendLayout();
             // 
             // txtNome
@@ -120,6 +120,7 @@
             btnCadastrar.TabIndex = 8;
             btnCadastrar.Text = "Cadastrar";
             btnCadastrar.UseVisualStyleBackColor = true;
+            btnCadastrar.Click += btnCadastrar_Click;
             // 
             // btnVoltar
             // 
@@ -140,13 +141,13 @@
             lblSenha.TabIndex = 10;
             lblSenha.Text = "Senha:";
             // 
-            // textBox1
+            // txtSenha
             // 
-            textBox1.Location = new Point(22, 303);
-            textBox1.Name = "textBox1";
-            textBox1.PasswordChar = '*';
-            textBox1.Size = new Size(248, 23);
-            textBox1.TabIndex = 11;
+            txtSenha.Location = new Point(22, 303);
+            txtSenha.Name = "txtSenha";
+            txtSenha.PasswordChar = '*';
+            txtSenha.Size = new Size(248, 23);
+            txtSenha.TabIndex = 11;
             // 
             // FrmCadastroUsuario
             // 
@@ -154,7 +155,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 192, 128);
             ClientSize = new Size(340, 416);
-            Controls.Add(textBox1);
+            Controls.Add(txtSenha);
             Controls.Add(lblSenha);
             Controls.Add(btnVoltar);
             Controls.Add(btnCadastrar);
@@ -185,6 +186,6 @@
         private Button btnCadastrar;
         private Button btnVoltar;
         private Label lblSenha;
-        private TextBox textBox1;
+        private TextBox txtSenha;
     }
 }
